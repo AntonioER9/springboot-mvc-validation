@@ -1,5 +1,6 @@
 package com.antonio.mvc;
 
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
@@ -9,7 +10,7 @@ public class Customer {
 
     @NotNull(message = "is required")
     @Size(min=1, message = "is required")
-    private  String lastName= "";
+    private  String lastName;
 
     public String getFirstName() {
         return firstName;
